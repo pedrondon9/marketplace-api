@@ -10,7 +10,6 @@ const passport = require('passport');
 const app = express()
 
 
-
 //db
 require("./db")
 //passpor-local
@@ -33,7 +32,7 @@ const route = require("./route/rutas")
 
 
 //setting
-app.set("port" , process.env.PORT || 5000)
+app.set("port" , process.env.PORT || 6010)
 app.set(morgan("dev"))
 app.set("views" , path.join(__dirname , "views"))
 app.set("view engine" , "ejs")
